@@ -55,15 +55,14 @@ function preload(){
 }
 
 function setup(){
-  
-createCanvas(1200,300);
+createCanvas(windowWidth, windowHeight);
 // Moving background
-path=createSprite(100,150);
+path=createSprite(width/2,height-10,width,125);
 path.addImage(pathImg);
 path.velocityX = -5;
 
 //creating boy running
-mainCyclist  = createSprite(70,150);
+mainCyclist  = createSprite(50,height-70,20,50);
 mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
 mainCyclist.scale=0.07;
   
